@@ -1,0 +1,7 @@
+{
+	"name": "ADFPipeline1",
+	"properties": {
+		"concurrency": 1,
+		"annotations": []
+	}
+}
