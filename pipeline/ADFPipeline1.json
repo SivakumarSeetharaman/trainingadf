@@ -27,26 +27,6 @@
 					},
 					"firstRowOnly": false
 				}
-			},
-			{
-				"name": "ForEach1",
-				"type": "ForEach",
-				"dependsOn": [
-					{
-						"activity": "GetProcessedBlobs",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"userProperties": [],
-				"typeProperties": {
-					"items": {
-						"value": "@activity('GetProcessedBlobs').output.value",
-						"type": "Expression"
-					},
-					"isSequential": true
-				}
 			}
 		],
 		"concurrency": 1,
